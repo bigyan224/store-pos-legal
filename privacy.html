@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — StorePOS</title>
+<style>
+  body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; color: #17181c; background: #f4f6fa; margin: 0; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; background: #fff; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  p, li { font-size: 15px; line-height: 1.6; }
+  ul { padding-left: 22px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e4e7ec; vertical-align: top; }
+  th { color: #6b7280; font-size: 13px; }
+  a { color: #1f6feb; }
+  footer { margin-top: 40px; font-size: 13px; color: #6b7280; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — StorePOS</h1>
+  <div class="meta">Version 1 · Effective 1 October 2026 · Updated together with Terms of Service v1</div>
+
+  <p>StorePOS is a point-of-sale and shop-record system for small shops in
+  Nepal. This policy explains, in plain language, what personal data we hold,
+  why we hold it, and what your rights are. Short version: <strong>your shop's
+  records belong to you, we never sell data, and we collect nothing beyond
+  what the app needs to work.</strong></p>
+
+  <h2>1. Data we store and why</h2>
+  <table>
+    <tr><th>What</th><th>Why we need it</th></tr>
+    <tr><td>Account identity (name, email, Google profile where used)</td><td>Sign-in and telling your shops apart. Handled by our login provider (see §5).</td></tr>
+    <tr><td>Shop profile (shop name, owner email, phone, address, PAN/VAT number)</td><td>Your shop identity, bills, support contact, and subscription management.</td></tr>
+    <tr><td>Business records you enter (sales, purchases, expenses, products, stock, bills)</td><td>The core service: recording, syncing, backup, and the seller website.</td></tr>
+    <tr><td>Party / khata details (customer and supplier names, phone numbers)</td><td>Credit ledgers, dues tracking, and payment reminders <em>you</em> choose to send.</td></tr>
+    <tr><td>Product and bill photos</td><td>Visual records that sync between your devices.</td></tr>
+    <tr><td>Device info (device name, install ID) and server logs (IP address, request times)</td><td>Enforcing your plan's device limit, security, and keeping the service running. Passwords and login tokens are stripped from logs before storage.</td></tr>
+    <tr><td>Payment records (amount, method, note)</td><td>Proof of your subscription payments. <strong>We never see or store card or bank credentials</strong> — collections are currently cash, in person.</td></tr>
+  </table>
+
+  <h2>2. Data we do NOT collect</h2>
+  <ul>
+    <li>No advertising trackers, no analytics SDKs, no third-party cookies —
+    the app and website contain zero tracking technology. There is nothing to
+    consent to, which is why you see no cookie banner.</li>
+    <li>No location tracking, no contact-list access, no background data
+    collection of any kind.</li>
+    <li>Sign-in sessions live on your own device only (secure storage in the
+    app, browser storage on the website).</li>
+  </ul>
+
+  <h2>3. Your customers' data (important)</h2>
+  <p>When you type a customer's name or phone number into khata, <strong>you</strong>
+  are responsible for that data — for example, only recording customers who
+  do business with you, and deleting their details if they ask you to (delete
+  the party in the app and it deletes from our servers on the next sync). We
+  process it strictly as your storage provider and never contact your
+  customers ourselves. WhatsApp reminders go out from <em>your</em> phone,
+  under <em>your</em> responsibility.</p>
+
+  <h2>4. Who else touches your data (processors)</h2>
+  <p>We run on established providers, each holding only what its job needs:</p>
+  <ul>
+    <li><strong>Clerk</strong> — sign-in and identity (USA/EU).</li>
+    <li><strong>MongoDB Atlas</strong> — database hosting for your records.</li>
+    <li><strong>Cloudinary</strong> — photo storage for products and bills.</li>
+    <li><strong>Render</strong> — backend server hosting.</li>
+    <li><strong>Expo / EAS</strong> — app builds and updates.</li>
+    <li><strong>GitHub</strong> — source code (never your shop data).</li>
+    <li><strong>WhatsApp (Meta)</strong> — only if and when <em>you</em> tap a
+    reminder or support link; nothing is sent there automatically.</li>
+  </ul>
+  <p>We disclose data to authorities only when required by Nepali law.</p>
+
+  <h2>5. How long we keep data</h2>
+  <ul>
+    <li>Shop records: until you delete them (deletes sync to our servers), or
+    until you ask us to erase everything — see §7.</li>
+    <li>Server logs (IP addresses, request metadata): kept short-term for
+    operations and then discarded (hosting-provider retention, roughly 30 days).</li>
+    <li>Expired or cancelled shops: records are preserved (never auto-deleted),
+    so renewing restores everything.</li>
+  </ul>
+
+  <h2>6. Security</h2>
+  <ul>
+    <li>Encrypted connections (HTTPS/TLS) everywhere; passwords stored as
+    one-way bcrypt hashes, never in readable form.</li>
+    <li>Every shop's data is strictly isolated — accounts can only ever read
+    or write their own shop.</li>
+    <li>Login secrets and passwords are stripped from server logs before storage.</li>
+  </ul>
+  <p>No system is perfectly secure. If we ever discover a breach affecting
+  your data, we will inform affected shop owners directly and without undue delay.</p>
+
+  <h2>7. Your rights (access, correction, deletion)</h2>
+  <ul>
+    <li><strong>See / fix:</strong> everything the app holds about you is
+    visible and editable in the app itself (Profile, Settings, records).</li>
+    <li><strong>Delete everything:</strong> message your seller
+    (<a href="https://wa.me/9779742906882">WhatsApp 9742906882</a>) asking for
+    full erasure — we remove your shop and records from our servers. Copies on
+    your own phones remain yours to delete (uninstall the app).</li>
+    <li><strong>Export:</strong> ask and we will provide your shop's records
+    in a portable format (CSV).</li>
+  </ul>
+
+  <h2>8. Children and business use</h2>
+  <p>StorePOS is a business tool for shop owners aged 18 and above. It is not
+  directed at children, and we do not knowingly hold children's data beyond
+  what a shop owner enters in the course of business (covered by §3).</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>Material changes get a new version number and an in-app prompt before
+  continuing — the same mechanism as the Terms of Service. Minor wording
+  fixes do not trigger a re-prompt.</p>
+
+  <h2>10. Law and contact</h2>
+  <p>These terms are governed by the laws of Nepal. Privacy questions or
+  requests: contact your seller directly —
+  <a href="https://wa.me/9779742906882">WhatsApp 9742906882</a>.</p>
+
+  <footer>StorePOS · Privacy v1 · © 2026 · See also: <a href="terms.html">Terms of Service</a></footer>
+</main>
+</body>
+</html>
